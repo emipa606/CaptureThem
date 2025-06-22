@@ -7,9 +7,9 @@ namespace CaptureThem;
 
 public class WorkGiver_CapturePrisoners : WorkGiver_RescueDowned
 {
-    protected JobDef Job => JobDefOf.Capture;
+    private static JobDef Job => JobDefOf.Capture;
 
-    protected DesignationDef Designation => CaptureThemDefOf.CaptureThemCapture;
+    private static DesignationDef Designation => CaptureThemDefOf.CaptureThemCapture;
 
     public override bool ShouldSkip(Pawn pawn, bool forced = false)
     {
@@ -32,20 +32,17 @@ public class WorkGiver_CapturePrisoners : WorkGiver_RescueDowned
             return false;
         }
 
-        if (pawn2.InBed() || !pawn.CanReserve(pawn2, 1, -1, null, forced) || DangerIsNear(pawn, pawn2, 40f))
+        if (pawn2.InBed() || !pawn.CanReserve(pawn2, 1, -1, null, forced) || dangerIsNear(pawn, pawn2, 40f))
         {
             return false;
         }
 
-        var building_Bed = RestUtility.FindBedFor(pawn2, pawn, false, false, GuestStatus.Prisoner);
-        if (building_Bed == null)
-        {
-            building_Bed = RestUtility.FindBedFor(pawn2, pawn, false, true, GuestStatus.Prisoner);
-        }
+        var buildingBed = RestUtility.FindBedFor(pawn2, pawn, false, false, GuestStatus.Prisoner) ??
+                          RestUtility.FindBedFor(pawn2, pawn, false, true, GuestStatus.Prisoner);
 
-        if (building_Bed != null)
+        if (buildingBed != null)
         {
-            return pawn.CanReserve(building_Bed, 1, -1, null, forced);
+            return pawn.CanReserve(buildingBed, 1, -1, null, forced);
         }
 
         Messages.Message("CannotCapture".Translate() + ": " + "NoPrisonerBed".Translate(), pawn2,
@@ -63,7 +60,7 @@ public class WorkGiver_CapturePrisoners : WorkGiver_RescueDowned
         return job;
     }
 
-    private static bool DangerIsNear(Pawn pawn, Pawn p, float radius)
+    private static bool dangerIsNear(Pawn pawn, Pawn p, float radius)
     {
         if (!p.Spawned)
         {

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  <!-- EN: Capture pawns -->
+  <CaptureThemCapture.label>Capture pawns</CaptureThemCapture.label>
+  <!-- EN: capturing -->
+  <CaptureThemCapture.gerund>capturing</CaptureThemCapture.gerund>
+  <!-- EN: capture -->
+  <CaptureThemCapture.verb>capture</CaptureThemCapture.verb>
+</LanguageData>

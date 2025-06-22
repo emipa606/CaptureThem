@@ -8,6 +8,7 @@
     <li>1.3</li>
     <li>1.4</li>
     <li>1.5</li>
+    <li>1.6</li>
   </supportedVersions>
   <modDependencies>
     <li>
@@ -43,7 +44,7 @@ You don't have to manually right click capturing anymore.
 
 [h1]Bugs and suggestions[/h1]
 
-If you encounter any errors related to this mod or notice bugs, please post about it into [url=https://steamcommunity.com/workshop/filedetails/discussion/2582758172/3042731710367488848/]bug reports section[/url]. All bug reports without any description and log will be ignored. Also feel free to post any suggestions in comments on how to make this mod better.
+[strike]If you encounter any errors related to this mod or notice bugs, please post about it into [url=https://steamcommunity.com/workshop/filedetails/discussion/2582758172/3042731710367488848/]bug reports section[/url].[/strike] All bug reports without any description and log will be ignored. Also feel free to post any suggestions in comments on how to make this mod better.
 
 [h1]Compatibility[/h1]
 Should be compatible with anything.
@@ -54,9 +55,6 @@ Misc. Robots++
 -English
 -ChineseSimplified (简体中文)
 
-For those who wish to contribute to my BioTech DLC purchase.
-[url=https://boosty.to/bustedbunny] [img]https://steamuserimages-a.akamaihd.net/ugc/1893226588885225061/74CC48E04ABA85EFEC132A71B213DF25A6411A23/?imw=5000&amp;amp;imh=5000&amp;amp;ima=fit&amp;amp;imcolor=%23000000&amp;amp;letterbox=false[/img] [/url]
-
 [img]https://i.imgur.com/PwoNOj4.png[/img]
 [list]
 [*] See if the the error persists if you just have this mod and its requirements active.
@@ -66,6 +64,8 @@ For those who wish to contribute to my BioTech DLC purchase.
 [*] Do not report errors by making a discussion-thread, I get no notification of that.
 [*] If you have the solution for a problem, please post it to the GitHub repository.
 [*] Use [url=https://github.com/RimSort/RimSort/releases/latest]RimSort[/url] to sort your mods
-[/list]</description>
-  <modVersion IgnoreIfNoMatchingField="True">1.5.0</modVersion>
+[/list] 
+
+[url=https://steamcommunity.com/sharedfiles/filedetails/changelog/3255137581][img]https://img.shields.io/github/v/release/emipa606/CaptureThem?label=latest%20version&amp;style=plastic&amp;color=9f1111&amp;labelColor=black[/img][/url] | tags:  captures,  tool</description>
+  <modVersion IgnoreIfNoMatchingField="True">1.6.0</modVersion>
 </ModMetaData>

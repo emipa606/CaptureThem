@@ -2,7 +2,7 @@
 <ModSyncNinjaData>
   <ID>2e3feb1a-d3cb-4afa-8546-c03870fe0192</ID>
   <ModName>Capture Them (Continued)</ModName>
-  <Version>1.5.0</Version>
+  <Version>1.6.0</Version>
   <SaveBreaking>False</SaveBreaking>
   <Host name="Github">
     <Owner>emipa606</Owner>
@@ -12,7 +12,4 @@
     <Branch>master</Branch>
   </Host>
 </ModSyncNinjaData>
-
-
-
 
