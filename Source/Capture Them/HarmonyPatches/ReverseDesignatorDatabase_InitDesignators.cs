@@ -5,7 +5,7 @@ using Verse;
 namespace Capture_Them.HarmonyPatches;
 
 [HarmonyPatch(typeof(ReverseDesignatorDatabase), "InitDesignators")]
-public class ReverseDesignatorDatabase_InitDesignators
+public static class ReverseDesignatorDatabase_InitDesignators
 {
     public static void Postfix(ref ReverseDesignatorDatabase __instance)
     {

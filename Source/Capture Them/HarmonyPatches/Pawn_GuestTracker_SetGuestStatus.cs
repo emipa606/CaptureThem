@@ -6,7 +6,7 @@ using Verse;
 namespace Capture_Them.HarmonyPatches;
 
 [HarmonyPatch(typeof(Pawn_GuestTracker), nameof(Pawn_GuestTracker.SetGuestStatus))]
-public class Pawn_GuestTracker_SetGuestStatus
+public static class Pawn_GuestTracker_SetGuestStatus
 {
     public static void Postfix(Pawn ___pawn, GuestStatus guestStatus)
     {

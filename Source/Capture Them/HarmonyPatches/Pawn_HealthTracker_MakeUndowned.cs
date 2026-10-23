@@ -5,7 +5,7 @@ using Verse;
 namespace Capture_Them.HarmonyPatches;
 
 [HarmonyPatch(typeof(Pawn_HealthTracker), "MakeUndowned")]
-public class Pawn_HealthTracker_MakeUndowned
+public static class Pawn_HealthTracker_MakeUndowned
 {
     public static void Prefix(Pawn ___pawn)
     {

@@ -3,4 +3,24 @@
     <BuildType Name="Release" />
   </Configurations>
   <Project Path="Capture Them/CaptureThem.csproj" />
+  <Folder Name="/.github/">
+    <File Path="../.github/copilot-instructions.md" />
+  </Folder>
+  <Folder Name="/XML/Patches/">
+    <File Path="../Patches/DesignationCategories.xml" />
+    <File Path="../Patches/ReturnToBedPatch.xml" />
+  </Folder>
+  <Folder Name="/XML/Patches/Misc. Robots++/">
+    <File Path="../Patches/Misc. Robots++/RPP_Races.xml" />
+  </Folder>
+  <Folder Name="/XML/About/">
+    <File Path="../About/about.xml" />
+  </Folder>
+  <Folder Name="/XML/Languages/English/Keyed/">
+    <File Path="../Languages/English/Keyed/Keys.xml" />
+  </Folder>
+  <Folder Name="/XML/Defs/">
+    <File Path="../Defs/Designations.xml" />
+    <File Path="../Defs/WorkGivers.xml" />
+  </Folder>
 </Solution>
